@@ -18,6 +18,12 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
 }
+.section-description {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  width: 680px;
+  margin: 0 auto;
+}
 
 .btn-primary {
   color: #fff;
@@ -170,20 +176,107 @@ select {
 .popular-list li {
   margin-bottom: 24px;
 }
-.text-side{
-    width: 50%;
+.text-side {
+  width: 50%;
 }
-.popular-list li{
-    margin-left: 25px;
+.popular-list li {
+  margin-left: 25px;
 }
-.img-side img{
-    width: 100%;
+.img-side img {
+  width: 100%;
 }
+.destination-container h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.destination-container p {
+  margin-bottom: 48px;
+}
+.destination-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.destination-images h4{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.img-card1{
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-card1 h4{
+    position: absolute;
+    top: 125px;
+    left: 225px;
+}
+
+.img-card2{
+    position: relative;
+}
+.img-card2 h4{
+    position: absolute;
+    top: 125px;
+    left: 225px;
+}
+.img-card3{
+    position: relative;
+    flex-shrink: 0;
+}
+.img-card3 h4{
+    position: absolute;
+    top: 125px;
+    left: 135px;
+}
+.img-card4{
+    position: relative;
+}
+.img-card4 h4{
+    position: absolute;
+    top: 125px;
+    left: 150px;
+}
+.img-card5{
+    position: relative;
+}
+.img-card5 h4{
+    position: absolute;
+    top: 125px;
+    left: 90px;
+
+}
+.img-card6{
+    position: relative;
+}
+.img-card6 h4{
+    position: absolute;
+    top: 125px;
+    left: 160px;
+
+}
+.img-card7 {
+    position: relative;
+}
+.img-card7 h4{
+    position: absolute;
+    top: 125px;
+    left: 255px;
+
+}
+
+
+
 
 /* For mobile devices */
 @media screen and (max-width: 600px) {
   .hideOnMobile {
     display: none;
+  }
+  .section-description {
+    width: 100%;
   }
   nav {
     padding: 15px;
@@ -225,7 +318,7 @@ select {
     font-size: 14px;
     width: 80%;
   }
-  .popular-sec-container{
+  .popular-sec-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -234,14 +327,12 @@ select {
     margin-bottom: 24px;
     gap: 24px;
   }
-  .text-side{
+  .text-side {
     width: 100%;
-}
-  .section-heading{
+  }
+  .section-heading {
     font-size: 1.25rem;
   }
-
-
 }
 
 /* For tablets */
@@ -267,7 +358,7 @@ select {
     font-size: 14px;
     width: 80%;
   }
-  .popular-sec-container{
+  .popular-sec-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -276,15 +367,13 @@ select {
     margin-bottom: 24px;
     gap: 24px;
   }
-  .section-heading{
+  .section-heading {
     font-size: 1.5rem;
   }
-  .text-side{
+  .text-side {
     width: 100%;
+  }
 }
-}
-
-
 
 /* For big screen */
 @media screen and (min-width: 993px) {
