@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>NomadNest Travel</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <!-- Mobile Menu -->
+           <ul class="sidebar">
+            <li class="ham" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="mob-menu"><a href="#">Home</a></li>
+            <li class="mob-menu"><a href="#">Packages</a></li>
+            <li class="mob-menu"><a href="#">Testimonial</a></li>
+            <li class="mob-menu"><a href="#">Blog</a></li>
+            <li class="mob-menu"><a href="#">Contact</a></li>
+           </ul> 
+
+            <!-- Desktop menu -->
+
+           <ul>
+            <li class="logo"><a href="#"> <img cla src="images/logo.png" alt="">NomadNest<span class="color-primary txt-mrgn"> Travel</span> </a></li>
+            <li class="hideOnMobile deskMenu"><a href="#">Home</a></li>
+            <li class="hideOnMobile deskMenu"><a href="#">Packages</a></li>
+            <li class="hideOnMobile deskMenu"><a href="#">Testimonial</a></li>
+            <li class="hideOnMobile deskMenu"><a href="#">Blog</a></li>
+            <li class="hideOnMobile deskMenu"><a href="#">Contact</a></li>
+            <li class="hide-on-desktop" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+           </ul> 
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Banner section -->
+        <section class="hero-container">
+            <div class="hero-contents">
+                <h2 class="hero-title">Adventures for Every Explorer</h2>
+                <p class="hero-txt">Embark on unforgettable journeys with NomadNest Travel, your passport to expertly crafted travel experiences, tailored to satisfy every wanderer's dream.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
 </body>
 </html>
