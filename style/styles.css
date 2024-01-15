@@ -71,7 +71,7 @@ nav li:first-child {
   height: 50vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.204);
+  background-color: rgba(255, 255, 255, 0.501);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -88,20 +88,71 @@ nav li:first-child {
 
 /* Hero section styles */
 
-.hero-container{
-    background: url();
+.hero-container {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../images/hero-banner.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-contents {
+  margin-top: 106px;
+}
+.hero-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800px;
+  margin-bottom: 16px;
+}
+.hero-txt {
+  width: 680px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 48px;
+}
+.selector-form {
+  margin-bottom: 106px;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  gap: 24px;
+}
+input,
+select {
+  padding: 16px 34px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 8px;
+  width: 174px;
+  color: rgba(19, 19, 24, 0.5);
+}
+.btn-find {
+  color: #fff;
+  padding: 16px 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #ff5400;
+  cursor: pointer;
+}
+.btn-find .src-icn {
+  margin-right: 8px;
 }
 
-
-
-
-
-
+/* For mobile devices */
 @media screen and (max-width: 600px) {
   .hideOnMobile {
     display: none;
   }
-  nav{
+  nav {
     padding: 15px;
   }
   .logo img {
@@ -120,18 +171,59 @@ nav li:first-child {
   .sidebar {
     width: 75vw;
   }
- .ham>a{
+  .ham > a {
     padding: 15px;
- }
+  }
+  .hero-container{
+    background-size: cover;
+    background-position: center;
+    margin: 0 15px;
+  }
+  .hero-contents{
+    margin-top: 32px;
+  }
+  .selector-form{
+    flex-direction: column;
+  }
+  .hero-title{
+    font-size: 1.25rem;
+  }
+  .hero-txt{
+    font-size: 14px;
+    width: 80%;
+  }
 }
 
+
+/* For tablets */
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .hideOnMobile {
     display: none;
   }
+  .hero-container{
+    background-size: cover;
+    background-position: center;
+    margin: 0 15px;
+  }
+  .hero-contents{
+    margin-top: 32px;
+  }
+  .selector-form{
+    flex-direction: column;
+  }
+  .hero-title{
+    font-size: 1.25rem;
+  }
+  .hero-txt{
+    font-size: 14px;
+    width: 80%;
+  }
 }
+
+/* For big screen */
 @media screen and (min-width: 993px) {
   .hide-on-desktop {
     display: none;
   }
+  
 }
