@@ -13,6 +13,21 @@ body {
 .color-primary {
   color: #ff5400;
 }
+.section-heading {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.btn-primary {
+  color: #fff;
+  padding: 15px 34px;
+  font-size: 1.25rem;
+  border: 0;
+  border-radius: 8px;
+  background: #ff5400;
+  cursor: pointer;
+}
 
 /* Navigation styles */
 .logo > a {
@@ -135,16 +150,34 @@ select {
   width: 174px;
   color: rgba(19, 19, 24, 0.5);
 }
-.btn-find {
-  color: #fff;
-  padding: 16px 34px;
-  border: 0;
-  border-radius: 8px;
-  background: #ff5400;
-  cursor: pointer;
-}
+
 .btn-find .src-icn {
   margin-right: 8px;
+}
+
+/* Our popular tours */
+.popular-sec-container {
+  display: flex;
+  margin: 100px 0;
+  gap: 50px;
+}
+.popular-tour-description,
+.popular-list {
+  color: rgba(19, 19, 24, 0.7);
+}
+.text-side h3,
+.text-side p,
+.popular-list li {
+  margin-bottom: 24px;
+}
+.text-side{
+    width: 50%;
+}
+.popular-list li{
+    margin-left: 25px;
+}
+.img-side img{
+    width: 100%;
 }
 
 /* For mobile devices */
@@ -174,56 +207,88 @@ select {
   .ham > a {
     padding: 15px;
   }
-  .hero-container{
+  .hero-container {
     background-size: cover;
     background-position: center;
     margin: 0 15px;
   }
-  .hero-contents{
+  .hero-contents {
     margin-top: 32px;
   }
-  .selector-form{
+  .selector-form {
     flex-direction: column;
   }
-  .hero-title{
+  .hero-title {
     font-size: 1.25rem;
   }
-  .hero-txt{
+  .hero-txt {
     font-size: 14px;
     width: 80%;
   }
+  .popular-sec-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 24px;
+  }
+  .text-side{
+    width: 100%;
 }
+  .section-heading{
+    font-size: 1.25rem;
+  }
 
+
+}
 
 /* For tablets */
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .hideOnMobile {
     display: none;
   }
-  .hero-container{
+  .hero-container {
     background-size: cover;
     background-position: center;
     margin: 0 15px;
   }
-  .hero-contents{
+  .hero-contents {
     margin-top: 32px;
   }
-  .selector-form{
+  .selector-form {
     flex-direction: column;
   }
-  .hero-title{
+  .hero-title {
     font-size: 1.25rem;
   }
-  .hero-txt{
+  .hero-txt {
     font-size: 14px;
     width: 80%;
   }
+  .popular-sec-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 24px;
+  }
+  .section-heading{
+    font-size: 1.5rem;
+  }
+  .text-side{
+    width: 100%;
 }
+}
+
+
 
 /* For big screen */
 @media screen and (min-width: 993px) {
   .hide-on-desktop {
     display: none;
   }
-  
 }
