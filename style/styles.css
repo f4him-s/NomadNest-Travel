@@ -36,6 +36,11 @@ header,
   border-radius: 8px;
   background: #ff5400;
   cursor: pointer;
+  transition: .5s;
+}
+.btn-primary:hover{
+    background-color: #c14101;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.32);
 }
 
 /* Navigation styles */
@@ -438,7 +443,7 @@ footer {
 .booking-cards{
     margin-top: 32px;
     display: flex;
-    gap: 24px;
+    gap: 32px;
     justify-content: center;
     align-items: center;
 }
@@ -449,6 +454,7 @@ footer {
     padding: 24px;
     box-shadow: #1313180d;
     height: 450px;
+    box-shadow: 1px 0px 10px 1px rgba(255, 68, 0, 0.32);
 }
 .star-rating{
     color: #ffcd05;
@@ -478,6 +484,7 @@ footer {
 .view-all{
     margin-top: 24px;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 
