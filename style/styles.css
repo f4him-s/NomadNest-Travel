@@ -148,11 +148,10 @@ nav li:first-child {
   display: flex;
   gap: 24px;
 }
-input,
-select {
+.head-input,select {
   padding: 16px 34px;
   background-color: #fff;
-  border: 0;
+  border: none;
   border-radius: 8px;
   width: 174px;
   color: rgba(19, 19, 24, 0.5);
@@ -279,6 +278,8 @@ select {
   display: flex;
   gap: 24px;
   margin-top: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-heading {
@@ -314,6 +315,72 @@ select {
 .card3 img {
   margin-bottom: 24px;
 }
+.newsletter {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.form {
+  width: 70%;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter .img {
+  width: 100%;
+}
+.img img{
+    width: 100%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+
+}
+.newsletter-heading{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-align: left;
+
+}
+.newsletter-description{
+    color: #5a5a5d;
+    
+}
+.newsletter-input{
+    width: 100%;
+    background-color: #1313180D;
+    padding: 16px 0px 16px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.btn-subscribe{
+ width: 100%;
+    
+}
+.hr-line{
+    margin: 24px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For mobile devices */
 @media screen and (max-width: 600px) {
@@ -368,7 +435,7 @@ select {
     font-size: 14px;
     width: 80%;
   }
-  input,
+  .head-input,
   select {
     width: 255px;
   }
@@ -431,6 +498,18 @@ select {
   .card3 {
     width: 100%;
   }
+.newsletter{
+    flex-direction: column;
+    margin: 0 15px;
+}
+.form{
+    width: 100%;
+}
+.form-container{
+    padding: 24px 0;
+}
+
+
 }
 
 /* For tablets */
@@ -456,7 +535,7 @@ select {
     font-size: 14px;
     width: 80%;
   }
-  input,
+  .head-input,
   select {
     width: 300px;
   }
@@ -472,6 +551,9 @@ select {
   .section-heading {
     font-size: 1.5rem;
   }
+  .section-description {
+    width: 100%;
+  }
   .text-side {
     width: 100%;
   }
@@ -482,10 +564,22 @@ select {
   .card-container {
     flex-direction: column;
     margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card3 {
     width: 100%;
   }
+  .newsletter{
+    flex-direction: column;
+    margin: 0 15px;
+}
+.form{
+    width: 100%;
+}
+.form-container{
+    padding: 24px 0;
+}
 }
 
 /* For big screen */
