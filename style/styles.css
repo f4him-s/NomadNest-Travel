@@ -432,7 +432,53 @@ footer {
     color: #fff;
     font-weight: 800;
 }
-
+.book-now{
+    margin: 100px 0;
+}
+.booking-cards{
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.book-card1{
+    border: 1px solid #ff5400;
+    width: max-content;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: #1313180d;
+    height: 450px;
+}
+.star-rating{
+    color: #ffcd05;
+    padding: 8px 0;
+}
+.card-location{
+    color: #ff5400;
+    margin-bottom: 8px;
+}
+.travel-card-description{
+    color: #424247;
+    margin-bottom: 8px;
+    max-width: 325px;
+    width: 100%;
+}
+.card-price{
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.book-card1 img{
+    border-radius: 8px;
+}
+.btn-trip{
+    width: 100%;
+}
+.view-all{
+    margin-top: 24px;
+    text-align: center;
+}
 
 
 /* For mobile devices */
@@ -580,6 +626,13 @@ footer {
     font-size: 21px;
     color: #fff;
     font-weight: 800;
+}
+.booking-cards{
+    flex-direction: column;
+
+}
+.book-now{
+    margin: 0 15px;
 }
 }
 
