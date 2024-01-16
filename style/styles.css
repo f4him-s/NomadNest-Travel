@@ -406,8 +406,32 @@ footer {
     display: flex;
     gap: 20px;
 }
-
-
+.img{
+    position: relative;
+}
+.discount-badge{
+    position: absolute;
+    /* width: 324px;
+    height: 120px; */
+    background-color: #ff5400;
+    border-radius: 16px;
+    padding: 30px 20px ;
+    text-align: center;
+    z-index: 10;
+    bottom: 10px;
+    right: -15px;
+    transform: rotate(340deg);
+    transform-origin: bottom left ;
+}
+.discount-badge p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.discount-badge h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+}
 
 
 
@@ -537,7 +561,28 @@ footer {
   .form-container {
     padding: 24px 0;
   }
+  footer{
+    margin-top: 24px;
+  }
+  .footer-wrapper{
+    padding: 30px 15px;
+  }
+  .discount-badge{
+    width: 100%;
+    max-width: 215px;
+  }
+
+  .discount-badge p{
+    font-size: 15px;
+    color: #fff;
 }
+.discount-badge h3{
+    font-size: 21px;
+    color: #fff;
+    font-weight: 800;
+}
+}
+
 
 /* For tablets */
 @media screen and (min-width: 600px) and (max-width: 992px) {
