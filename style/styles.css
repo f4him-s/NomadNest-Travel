@@ -197,78 +197,76 @@ select {
   flex-wrap: wrap;
   gap: 24px;
 }
-.destination-images h4{
-    color: #fff;
-    font-size: 1.75rem;
-    font-weight: 800;
+.destination-images h4 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
 }
-.img-card1{
-    background-size: cover;
-    border-radius: 10px;
-    position: relative;
+.destination-images img {
+  width: 100%;
 }
 
-.img-card1 h4{
-    position: absolute;
-    top: 125px;
-    left: 225px;
+.destination-images h4 {
+}
+.img-card1 {
+  position: relative;
 }
 
-.img-card2{
-    position: relative;
+.img-card1 h4 {
+  position: absolute;
+  top: 125px;
+  left: 225px;
 }
-.img-card2 h4{
-    position: absolute;
-    top: 125px;
-    left: 225px;
-}
-.img-card3{
-    position: relative;
-    flex-shrink: 0;
-}
-.img-card3 h4{
-    position: absolute;
-    top: 125px;
-    left: 135px;
-}
-.img-card4{
-    position: relative;
-}
-.img-card4 h4{
-    position: absolute;
-    top: 125px;
-    left: 150px;
-}
-.img-card5{
-    position: relative;
-}
-.img-card5 h4{
-    position: absolute;
-    top: 125px;
-    left: 90px;
 
+.img-card2 {
+  position: relative;
 }
-.img-card6{
-    position: relative;
+.img-card2 h4 {
+  position: absolute;
+  top: 125px;
+  left: 225px;
 }
-.img-card6 h4{
-    position: absolute;
-    top: 125px;
-    left: 160px;
-
+.img-card3 {
+  position: relative;
+  flex-shrink: 0;
+}
+.img-card3 h4 {
+  position: absolute;
+  top: 125px;
+  left: 135px;
+}
+.img-card4 {
+  position: relative;
+}
+.img-card4 h4 {
+  position: absolute;
+  top: 125px;
+  left: 150px;
+}
+.img-card5 {
+  position: relative;
+}
+.img-card5 h4 {
+  position: absolute;
+  top: 125px;
+  left: 90px;
+}
+.img-card6 {
+  position: relative;
+}
+.img-card6 h4 {
+  position: absolute;
+  top: 125px;
+  left: 160px;
 }
 .img-card7 {
-    position: relative;
+  position: relative;
 }
-.img-card7 h4{
-    position: absolute;
-    top: 125px;
-    left: 255px;
-
+.img-card7 h4 {
+  position: absolute;
+  top: 125px;
+  left: 255px;
 }
-
-
-
 
 /* For mobile devices */
 @media screen and (max-width: 600px) {
@@ -318,6 +316,10 @@ select {
     font-size: 14px;
     width: 80%;
   }
+  input,
+  select{
+    width: 255px;
+  }
   .popular-sec-container {
     flex-direction: column;
     align-items: center;
@@ -332,6 +334,41 @@ select {
   }
   .section-heading {
     font-size: 1.25rem;
+  }
+  .destination-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img-card1 h4 {
+    top: 90px;
+    left: 140px;
+  }
+  .img-card2 h4 {
+    top: 90px;
+    left: 140px;
+  }
+  .img-card3 h4 {
+    top: 125px;
+    left: 150px;
+  }
+  .img-card4 h4 {
+    top: 95px;
+    left: 100px;
+  }
+  .img-card5 h4 {
+    top: 170px;
+    left: 140px;
+  }
+  .img-card6 h4 {
+    /* top: 110px;
+    left: 120px; */
+    transform: translate(-30%, -50%);
+  }
+  .img-card7 h4 {
+    /* top: 80px;
+    left: 120px; */
+    transform: translate(-30%, 50%);
   }
 }
 
@@ -358,6 +395,10 @@ select {
     font-size: 14px;
     width: 80%;
   }
+  input,
+  select{
+    width: 300px;
+  }
   .popular-sec-container {
     flex-direction: column;
     align-items: center;
@@ -372,6 +413,10 @@ select {
   }
   .text-side {
     width: 100%;
+  }
+  .destination-images {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
